@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abstract Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Nav Section -->
+    <nav class="navbar">
+      <div class="container flex-container">
+        <div class="navbar-left">
+          <a href="" class="logo"> Abstract </a>
+          <a href="/" class="helper">Helper Center</a>
+        </div>
+        <div class="buttonWrapper">
+          <button class="btn btn-primary">Submit a request</button>
+          <button class="btn btn-secondary">Sign In</button>
+        </div>
+      </div>
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </nav>
+
+    <!-- Showcase Section -->
+    <section class="showcase">
+      <h2>How can we help?</h2>
+      <div class="inputWrapper" ar>
+        <input type="text" placeholder="Search" class="formControl" />
+        <i class="fa-solid">
+          <svg
+            height="20px"
+            width="20px"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 483.284 483.284"
+            xml:space="preserve"
+            fill="#000000"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <polygon
+                  class="fill"
+                  points="483.284,241.644 395,153.358 395,221.643 0,221.643 0,261.643 395,261.643 395,241.644 "
+                ></polygon>
+                <polygon
+                  class="fill"
+                  points="483.284,241.644 395,241.644 395,329.926 "
+                ></polygon>
+              </g>
+            </g>
+          </svg>
+        </i>
+      </div>
+    </section>
+    <section class="service">
+      <div class="container grid">
+        <!-- Items 1 -->
+        <div class="items">
+          <img src="./images/image1.png" height="94" width="94" alt="" />
+          <div class="service__wrapper">
+            <h3 class="service--title">Using Abstract</h3>
+            <p class="service--content">
+              Using Abstract Abstract lets you manage, version, and document
+              your designs in one place.
+            </p>
+            <a href="#" class="service--link"
+              >Learn More <img src="./images/arrow-right.svg"
+            /></a>
+          </div>
+        </div>
+        <!-- Items2 -->
+        <div class="items">
+          <img src="./images/image2.png" height="94" width="94" alt="" />
+          <div class="service__wrapper">
+            <h3 class="service--title">Manage your account</h3>
+            <p class="service--content">
+              Configure your account settings, such as your email, profile
+              details, and password.
+            </p>
+            <a href="#" class="service--link"
+              >Learn More <img src="./images/arrow-right.svg"
+            /></a>
+          </div>
+        </div>
+        <!-- Items 3 -->
+        <div class="items">
+          <img src="./images/image3.png" height="94" width="94" alt="" />
+          <div class="service__wrapper">
+            <h3 class="service--title">
+              Manage organizations, teams, and projects
+            </h3>
+            <p class="service--content">
+              Manage organizations, teams, and projects Use Abstract
+              organizations, teams, and projects to organize your people and
+              your work.
+            </p>
+            <a href="#" class="service--link"
+              >Learn More <img src="./images/arrow-right.svg"
+            /></a>
+          </div>
+        </div>
+        <!-- Items 4 -->
+        <div class="items">
+          <img src="./images/image4.png" height="94" width="94" alt="" />
+          <div class="service__wrapper">
+            <h3 class="service--title">Manage billing</h3>
+            <p class="service--content">
+              Manage billing Change subscriptions and payment details.
+            </p>
+            <a href="#" class="service--link"
+              >Learn More <img src="./images/arrow-right.svg"
+            /></a>
+          </div>
+        </div>
+        <!-- Items 5 -->
+        <div class="items">
+          <img src="./images/image5.png" height="94" width="94" alt="" />
+          <div class="service__wrapper">
+            <h3 class="service--title">Authenticate to Abstract</h3>
+            <p class="service--content">
+              Set up and configure SSO, SCIM, and Just-in-Time provisioning.
+            </p>
+            <a href="#" class="service--link"
+              >Learn More <img src="./images/arrow-right.svg"
+            /></a>
+          </div>
+        </div>
+        <!-- Items 6 -->
+        <div class="items">
+          <img src="./images/image6.png" height="94" width="94" alt="" />
+          <div class="service__wrapper">
+            <h3 class="service--title">Abstract support</h3>
+            <p class="service--content">Get in touch with a human.</p>
+            <a href="#" class="service--link"
+              >Learn More <img src="./images/arrow-right.svg"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      const bar = document.querySelector('.fa-bars')
+      const show = document.querySelector('.buttonWrapper')
+
+      bar.addEventListener('click', function () {
+        show.classList.toggle('show')
+        bar.style.top = '20%'
+      })
+    </script>
+  </body>
+</html>

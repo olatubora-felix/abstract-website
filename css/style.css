@@ -1,0 +1,248 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-blue: #4c5fd5;
+  --light-blue: #dadbf1;
+  --black: #000000;
+  --white: #fff;
+  --font-size: 16px;
+}
+
+.navbar {
+  background-color: var(--black);
+  width: 100%;
+  /* height: 70px; */
+  padding: 20px 0px;
+  position: relative;
+}
+
+.fa-bars {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  color: var(--white);
+  display: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar .flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left .logo,
+.helper {
+  margin-right: 10px;
+  text-decoration: none;
+  color: var(--white);
+  border-right: 1px solid #fff;
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.helper {
+  border: 0px;
+}
+
+.navbar-left .logo:hover {
+  color: var(--light-blue);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.buttonWrapper .btn {
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.buttonWrapper .btn-primary {
+  background-color: var(--black);
+  border: 1px solid var(--white);
+  margin-right: 10px;
+}
+
+.buttonWrapper .btn-secondary {
+  background-color: var(--dark-blue);
+}
+.buttonWrapper .btn-secondary:hover {
+  background-color: var(--white);
+  color: var(--black);
+  transition: all 2ms ease-in-out;
+}
+
+.showcase {
+  background-color: var(--light-blue);
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.showcase .inputWrapper {
+  position: relative;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  margin-top: 16px;
+}
+
+.showcase .inputWrapper:hover {
+  border: 1px solid var(--dark-blue);
+}
+
+.inputWrapper .fa-solid {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(-50%, -50%);
+}
+
+.inputWrapper .fa-solid:hover {
+  color: 1px solid var(--dark-blue);
+  cursor: pointer;
+}
+
+.inputWrapper .formControl {
+  width: 500px;
+  height: 40px;
+  padding: 0px 10px;
+  border: 0px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.fill {
+  fill: var(--black);
+}
+
+.fill:hover {
+  fill: var(--dark-blue);
+}
+
+.service {
+  padding: 2rem 0px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.grid .items {
+  display: flex;
+  align-items: center;
+}
+
+.items img {
+  margin-right: 10px;
+}
+
+.service__wrapper .service--title {
+  margin: 16px 0px;
+}
+.service__wrapper .service--content {
+  margin: 16px 0px;
+  font-size: 14px;
+}
+.service__wrapper .service--link {
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: var(--dark-blue4);
+}
+
+@media (max-width: 568px) {
+  .fa-bars {
+    display: block;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .navbar .flex-container {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-center;
+  }
+
+  .flex-container .navbar-left {
+    align-self: flex-start;
+  }
+
+  .buttonWrapper {
+    margin-top: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .buttonWrapper .btn-secondary {
+    background-color: transparent;
+    color: var(--white);
+  }
+
+  .buttonWrapper .btn-secondary:hover,
+  .buttonWrapper .btn-primary:hover {
+    background-color: transparent;
+    color: #c1c1c1;
+    transition: all 2ms ease-in-out;
+  }
+
+  .buttonWrapper .btn-primary {
+    background-color: transparent;
+    border: 0px;
+    margin-right: 0px;
+    padding: 10px;
+    border-radius: 0px;
+    border-bottom: 1px solid var(--white);
+  }
+
+  .buttonWrapper .btn-secondary {
+    background-color: transparent;
+  }
+
+  .inputWrapper .formControl {
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .navbar .flex-container {
+    flex-direction: column;
+  }
+
+  .buttonWrapper {
+    margin-top: 10px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
